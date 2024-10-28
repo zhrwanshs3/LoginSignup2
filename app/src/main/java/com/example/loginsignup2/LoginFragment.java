@@ -110,6 +110,7 @@ public class LoginFragment extends Fragment {
 
                     public void onSuccess(AuthResult authResult) {
                         Toast.makeText(getActivity(), "Successfully signed up!", Toast.LENGTH_SHORT).show();
+                        gotoAddDataFragment();
                     }
                 }).addOnFailureListener(new OnFailureListener() {
                     @Override
@@ -123,6 +124,13 @@ public class LoginFragment extends Fragment {
 
         });
     }
+
+    private void gotoAddDataFragment() {
+        FragmentTransaction ft= getActivity().getSupportFragmentManager().beginTransaction();
+        ft.replace(R.id.FrameLayoutMain,new AddDataFragment());
+        ft.commit();
+    }
+
     private void gotoSignupFregment() {
         FragmentTransaction ft= getActivity().getSupportFragmentManager().beginTransaction();
         ft.replace(R.id.FrameLayoutMain,new SignupFragment());
