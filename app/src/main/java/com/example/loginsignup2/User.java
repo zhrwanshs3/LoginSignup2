@@ -9,12 +9,18 @@ public class User {
     private String location ;
     private String lastname;
 
-    public User(String id, String name, String location, String specialty) {
-        this.phone= phone;
+    public User(String name, String lastname, String location, String phone) {
+
         this.name = name;
-        this.location = location;
         this.lastname = lastname;
+        this.location = location;
+        this.phone = phone;
     }
+
+    public User() {
+
+    }
+
     public String getPhone() {
         return phone;
     }

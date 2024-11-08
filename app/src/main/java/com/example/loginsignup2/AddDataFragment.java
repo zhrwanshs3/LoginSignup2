@@ -121,8 +121,8 @@ public class AddDataFragment extends Fragment {
                 }
                 //add to firbase
 
-                User us = new User(name, lastName, loction, phone);
-                fbs.getFire().collection("User").add(us).addOnSuccessListener(new OnSuccessListener<DocumentReference>() {
+                User us = new User(name1, lastName1, loction1, phone1);
+                fbs.getFire().collection("users").add(us).addOnSuccessListener(new OnSuccessListener<DocumentReference>() {
                     @Override
                     public void onSuccess(DocumentReference documentReference) {
                         Toast.makeText(getActivity(), "Failure!", Toast.LENGTH_SHORT).show();
