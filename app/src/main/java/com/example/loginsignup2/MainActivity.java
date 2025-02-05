@@ -9,6 +9,9 @@ import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 import androidx.fragment.app.FragmentTransaction;
 
+import com.example.loginsignup2.loginfile1.LoginFragment;
+import com.example.loginsignup2.signupfile1.SignupFragment;
+
 public class MainActivity extends AppCompatActivity {
 
     @Override

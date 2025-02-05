@@ -4,20 +4,38 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".AddDataFragment">
+    android:background="#71A13F"
+    tools:context=".userfile1.AddDataFragment">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:background="#71A13F">
+
+        <EditText
+            android:id="@+id/etname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="101dp"
+            android:layout_marginBottom="33dp"
+            android:ems="10"
+            android:inputType="text"
+            android:text="Name"
+            app:layout_constraintBottom_toTopOf="@+id/etLastName"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/imageView3"
+            app:layout_constraintTop_toBottomOf="@+id/imageView4" />
 
         <EditText
             android:id="@+id/etloction"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="22dp"
+            android:layout_marginBottom="27dp"
             android:ems="10"
             android:hint="Loction"
             android:inputType="textPostalAddress"
+            android:textColorHint="@color/black"
+            app:layout_constraintBottom_toTopOf="@+id/etPhone"
             app:layout_constraintStart_toStartOf="@+id/etLastName"
             app:layout_constraintTop_toBottomOf="@+id/etLastName" />
 
@@ -25,10 +43,12 @@
             android:id="@+id/etPhone"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="27dp"
+            android:layout_marginBottom="92dp"
             android:ems="10"
             android:hint="Phone"
             android:inputType="phone"
+            android:textColorHint="@color/black"
+            app:layout_constraintBottom_toTopOf="@+id/btnAdd"
             app:layout_constraintStart_toStartOf="@+id/etloction"
             app:layout_constraintTop_toBottomOf="@+id/etloction" />
 
@@ -36,33 +56,49 @@
             android:id="@+id/btnAdd"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="92dp"
+            android:layout_marginBottom="203dp"
             android:text="Add"
+            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/etPhone" />
 
         <EditText
-            android:id="@+id/etname"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="138dp"
-            android:ems="10"
-            android:hint="Name"
-            android:inputType="text"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
-
-        <EditText
             android:id="@+id/etLastName"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="21dp"
+            android:layout_marginEnd="1dp"
+            android:layout_marginBottom="22dp"
             android:ems="10"
             android:hint="familyName"
             android:inputType="text"
-            app:layout_constraintStart_toStartOf="@+id/etname"
+            android:textColorHint="@color/black"
+            app:layout_constraintBottom_toTopOf="@+id/etloction"
+            app:layout_constraintEnd_toEndOf="@+id/etname"
             app:layout_constraintTop_toBottomOf="@+id/etname" />
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginEnd="100dp"
+            android:background="#FFFFFF"
+            android:src="@drawable/__2025_02_05_104606"
+            app:layout_constraintBottom_toBottomOf="@+id/etname"
+            app:layout_constraintEnd_toStartOf="@+id/etname"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="254dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="68dp"
+            android:layout_marginTop="54dp"
+            android:layout_marginBottom="21dp"
+            android:src="@drawable/__2025_02_05_104606"
+            app:layout_constraintBottom_toTopOf="@+id/etname"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 </FrameLayout>

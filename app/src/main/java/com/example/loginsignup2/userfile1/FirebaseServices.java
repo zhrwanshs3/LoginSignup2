@@ -1,4 +1,4 @@
-package com.example.loginsignup2;
+package com.example.loginsignup2.userfile1;
 
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.firestore.FirebaseFirestore;

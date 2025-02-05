@@ -1,4 +1,4 @@
-package com.example.loginsignup2;
+package com.example.loginsignup2.signupfile1;
 
 import android.os.Bundle;
 
@@ -13,6 +13,9 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import com.example.loginsignup2.userfile1.AddDataFragment;
+import com.example.loginsignup2.userfile1.FirebaseServices;
+import com.example.loginsignup2.R;
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.firebase.auth.AuthResult;

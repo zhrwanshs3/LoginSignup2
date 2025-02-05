@@ -1,6 +1,4 @@
-package com.example.loginsignup2;
-
-import android.widget.EditText;
+package com.example.loginsignup2.userfile1;
 
 
 public class User {

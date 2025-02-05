@@ -1,4 +1,4 @@
-package com.example.loginsignup2;
+package com.example.loginsignup2.userfile1;
 
 import android.os.Bundle;
 
@@ -15,15 +15,10 @@ import android.widget.Toast;
 import android.widget.EditText;
 
 
+import com.example.loginsignup2.R;
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.firebase.firestore.DocumentReference;
-import com.google.android.gms.tasks.OnCompleteListener;
-import com.google.android.gms.tasks.OnFailureListener;
-import com.google.android.gms.tasks.OnSuccessListener;
-import com.google.android.gms.tasks.Task;
-import com.google.firebase.firestore.DocumentReference;
-
 
 
 /**
