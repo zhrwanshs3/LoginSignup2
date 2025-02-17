@@ -15,43 +15,56 @@
             android:id="@+id/button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginStart="57dp"
+            android:layout_marginBottom="245dp"
+            android:backgroundTint="#664FA3"
             android:text="Signup"
             android:textColor="@color/white"
             android:textColorLink="#08571F"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/editTextTextPassword"
+            app:layout_constraintTop_toBottomOf="@+id/editTextTextPassword"
             app:rippleColor="#2B2D30"
-            app:strokeColor="#430D0D"
-            tools:layout_editor_absoluteX="144dp"
-            tools:layout_editor_absoluteY="438dp" />
+            app:strokeColor="#430D0D" />
 
         <EditText
             android:id="@+id/editTextTextEmailAddress2"
             android:layout_width="211dp"
-            android:layout_height="50dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="47dp"
+            android:layout_marginBottom="39dp"
             android:ems="10"
             android:hint="username..."
             android:inputType="textEmailAddress"
             android:textColorHint="@color/black"
-            tools:layout_editor_absoluteX="86dp"
-            tools:layout_editor_absoluteY="243dp" />
+            app:layout_constraintBottom_toTopOf="@+id/editTextTextPassword"
+            app:layout_constraintStart_toStartOf="@+id/imageView2"
+            app:layout_constraintTop_toBottomOf="@+id/imageView2" />
 
         <EditText
             android:id="@+id/editTextTextPassword"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginBottom="61dp"
             android:ems="10"
             android:hint="password..."
             android:inputType="textPassword"
             android:textColorHint="@color/black"
-            tools:layout_editor_absoluteX="87dp"
-            tools:layout_editor_absoluteY="332dp" />
+            app:layout_constraintBottom_toTopOf="@+id/button"
+            app:layout_constraintEnd_toEndOf="@+id/editTextTextEmailAddress2"
+            app:layout_constraintTop_toBottomOf="@+id/editTextTextEmailAddress2" />
 
         <ImageView
             android:id="@+id/imageView2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginStart="39dp"
+            android:layout_marginTop="28dp"
+            android:layout_marginBottom="44dp"
             android:src="@drawable/__2025_02_05_104606"
-            tools:layout_editor_absoluteX="39dp"
-            tools:layout_editor_absoluteY="28dp" />
+            app:layout_constraintBottom_toTopOf="@+id/editTextTextEmailAddress2"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
